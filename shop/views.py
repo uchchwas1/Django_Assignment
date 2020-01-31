@@ -8,4 +8,5 @@ def index(request):
     products = Product.objects.all()
     print(products)
     params = {'product': products}
-    return render(request, 'shop/signup.html')
+    return render(request, 'shop/retrive.html', {'product': products})
+
